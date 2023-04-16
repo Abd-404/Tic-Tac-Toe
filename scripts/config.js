@@ -2,6 +2,7 @@ function openPlayerConfig(event) {
   editedPlayer = +event.target.dataset.playerid;
   playerConfigOverlayElement.style.display = "block";
   backdropElement.style.display = "block";
+  document.getElementById("playername").focus();
   document.getElementById("playername").value = players[editedPlayer - 1].name;
 }
 
